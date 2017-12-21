@@ -89,14 +89,12 @@
 <body>
 
 <nav class="w-100 fixed pv3 ph4">
-    <a href="/" class="fw4 ttu f6 white link mr3"><span class="dib mr2"><img src="http://www.yeswecancolumbus.org/wp-content/uploads/2017/04/YWCLongWhite.png" width="153" height="47"><br/></span></a>
-    <br/>
+    <a href="/" class="fw4 ttu f6 white link mr3"><span class="dib mr2"><img src="http://www.yeswecancolumbus.org/wp-content/uploads/2017/04/YWCLongWhite.png" width="153" height="47"></span></a>
     {% if not request.user.is_anonymous %}
         <a href="{% url 'event-list' %}" class="fw4 ttu f6 white link mr3">My Events</a>
         <a href="{% url 'event-create' %}" class="fw4 ttu f6 white link mr3">New Event</a>
         <a href="{% url 'logout' %}" class="fw4 ttu f6 white link mr3">Logout</a>
     {% endif %}
-    <br/>
 </nav>
 
 <main class="pv5 pa4 w-80-ns w-100">
