@@ -38,6 +38,11 @@
                'segoe ui', arial,
                sans-serif;
     }
+    /*input[type="submit"] {
+      background-color: #9ed51c;
+      border-radius: 0;
+      box-shadow: 11px 10px 153px 2px rgba(0,0,0,0.75);
+    },*/
     input[type="text"],
     input[type="password"],
     input[type="email"] {
@@ -68,7 +73,7 @@
         width: 100vw;
         max-width: 100%;
         height: 100vh;
-        background: #393e41;
+        background: #3c91e6;
         animation-delay: 1s;
         animation-duration: 1s;
         animation-name: fadeOutAndClear;
@@ -79,7 +84,7 @@
 <body>
 
 <nav class="w-100 fixed pv3 ph4">
-    <a href="/" class="fw4 ttu f6 white link mr3"><span class="dark-red dib mr2">&#127801;</span>Home</a>
+    <a href="/" class="fw4 ttu f6 white link mr3"><span class="bg-green dib mr2">&#127801;</span>Home</a>
     {% if not request.user.is_anonymous %}
         <a href="{% url 'event-list' %}" class="fw4 ttu f6 white link mr3">My Events</a>
         <a href="{% url 'event-create' %}" class="fw4 ttu f6 white link mr3">New Event</a>
