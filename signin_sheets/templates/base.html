@@ -43,11 +43,11 @@
                'segoe ui', arial,
                sans-serif;
     }
-    /*input[type="submit"] {
+    input[type="submit"] {
       background-color: #9ed51c;
       border-radius: 0;
       box-shadow: 11px 10px 153px 2px rgba(0,0,0,0.75);
-    },*/
+    },
     input[type="text"],
     input[type="password"],
     input[type="email"] {
@@ -89,7 +89,7 @@
 <body>
 
 <nav class="w-100 fixed pv3 ph4">
-    <a href="/" class="fw4 ttu f6 white link mr3"><span class="bg-green dib mr2"><img src="http://www.yeswecancolumbus.org/wp-content/uploads/2017/04/YWCWFPTransparentSquare145.png"></span>Yes We Can Event Sign-in</a>
+    <a href="/" class="fw4 ttu f6 white link mr3"><span class="dib mr2"><img src="http://www.yeswecancolumbus.org/wp-content/uploads/2017/04/YWCWFPTransparentSquare145.png"></span></a>
     {% if not request.user.is_anonymous %}
         <a href="{% url 'event-list' %}" class="fw4 ttu f6 white link mr3">My Events</a>
         <a href="{% url 'event-create' %}" class="fw4 ttu f6 white link mr3">New Event</a>
