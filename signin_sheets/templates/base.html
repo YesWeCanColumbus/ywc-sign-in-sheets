@@ -84,7 +84,7 @@
 <body>
 
 <nav class="w-100 fixed pv3 ph4">
-    <a href="/" class="fw4 ttu f6 white link mr3"><span class="bg-green dib mr2">&#127801;</span>Home</a>
+    <a href="/" class="fw4 ttu f6 white link mr3"><span class="bg-green dib mr2"><a href="http://www.yeswecancolumbus.org/wp-content/uploads/2017/04/YWCWFPTransparentSquare145.png"></span>Yes We Can Event Sign-in</a>
     {% if not request.user.is_anonymous %}
         <a href="{% url 'event-list' %}" class="fw4 ttu f6 white link mr3">My Events</a>
         <a href="{% url 'event-create' %}" class="fw4 ttu f6 white link mr3">New Event</a>
